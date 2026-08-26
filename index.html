@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A pointer, scroll, and noise-driven kinetic typography study." />
+    <title>Motion Typography</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="lab" aria-labelledby="title">
+      <p class="eyebrow">KINETIC / TYPE</p>
+      <h1 id="title">Motion Typography</h1>
+      <p>Move, scroll, and pause. Watch one phrase become a readable motion system.</p>
+      <div class="actions"><button id="pause" type="button">Pause motion</button><button id="reset" class="secondary" type="button">Reset phrase</button><button id="save" class="secondary" type="button">Save PNG</button></div>
+      <p id="status" class="status" role="status" aria-live="polite">Pointer and scroll are ready.</p>
+      <canvas id="canvas" aria-label="Animated motion typography specimen"></canvas>
+      <p class="study">Study the mapping from pointer position and scroll progress into scale, tracking, rotation, and noise.</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
